@@ -8,7 +8,7 @@ def check(dbg):
     if dbg.dbg.u.Exception.dwFirstChance:
         return DBG_EXCEPTION_NOT_HANDLED
     print "Access Violation!"
-    print "EIP: %0X"% dbg.Context.Eip
+    print "EIP: %0X"% dbg.context.Eip
 
     return DBG_EXCEPTION_NOT_HANDLED
 
